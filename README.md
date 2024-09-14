@@ -21,6 +21,41 @@ For more detailed information about the project, please refer to the following d
 
 This project is a starting point for integrating React Flow into a Flutter application. For help getting started with Flutter development, view the [online documentation](https://docs.flutter.dev/), which offers tutorials, samples, guidance on mobile development, and a full API reference.
 
+## Setup for Firebase Firstore database
+
+1. Create a new Firebase project in the [Firebase Console](https://console.firebase.google.com/).
+
+2. Add a new web app to your Firebase project and follow the setup instructions.
+
+3. Change the react-flow-app
+
+```
+cd react-flow-app
+cp .env.example .env
+```
+
+4. Add your Firebase project configuration to the `.env` file.
+
+5. Install the dependencies and start the React Flow app.
+
+```
+npm install
+npm run start
+```
+
+Play around with the React Flow app to see how the data is synchronized with the Firestore database.
+
+
+Here is a screenshot of the React Flow app running as a standalone web app:
+
+![React Flow App Screenshot](images/screenshot-running-node-web-app.png)
+
+Feel free to explore the app and see how the data is synchronized with the Firestore database.
+
+Screenshot of the firebase database:
+
+![Firebase Database Screenshot](images/screenshot-firebase-database.png)
+
 ## Contributing
 
 We welcome contributions from the community! If you're interested in contributing, please read our [Contribution Guidelines](CONTRIBUTING.md).
